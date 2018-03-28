@@ -13,6 +13,5 @@ Doubletwo에서는 누구나 그 지역의 여행가이드가 될 수 있습니�
 
 ##기획
 
-[프로젝트 제안서 최종본]
-(https://github.com/soomin0327/DoubleTwo/blob/master/Document/%EB%8D%94%EB%B8%94%ED%88%AC_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B0%9C%EB%B0%9C_%EA%B3%84%ED%9A%8D%EC%84%9C_%EC%88%98%EC%A0%95%EB%B3%B8.pdf)
+[프로젝트 제안서 최종본](https://github.com/soomin0327/DoubleTwo/blob/master/Document/%EB%8D%94%EB%B8%94%ED%88%AC_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B0%9C%EB%B0%9C_%EA%B3%84%ED%9A%8D%EC%84%9C_%EC%88%98%EC%A0%95%EB%B3%B8.pdf)
 
