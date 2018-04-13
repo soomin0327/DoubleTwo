@@ -27,28 +27,25 @@
             android:layout_height="wrap_content">
 
             <ImageButton
+                android:background="@null"
+                android:src="@drawable/ic_left_blue"
                 android:layout_alignParentLeft="true"
                 android:scaleType="fitXY"
                 android:layout_margin="5dp"
                 android:layout_width="50dp"
                 android:layout_height="50dp" />
 
-            <ImageView
-                android:layout_width="200dp"
-                android:layout_height="?attr/actionBarSize"
+            <TextView
+                android:textColor="@color/darkBlue"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:text="LOGIN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"
-                android:scaleType="fitXY"
-                android:background="@color/colorPrimary"/>
-
-            <ImageButton
-                android:layout_alignParentRight="true"
-                android:scaleType="fitXY"
-                android:layout_margin="5dp"
-                android:layout_width="50dp"
-                android:layout_height="50dp" />
-
+                android:scaleType="fitXY"/>
         </RelativeLayout>
     </android.support.v7.widget.Toolbar>
 
@@ -62,14 +59,17 @@
             android:layout_centerHorizontal="true"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/app_icon"
+            android:src="@drawable/logo_blue"
             android:scaleType="fitXY" />
 
-        <ImageView
+        <TextView
             android:id="@+id/appName"
-            android:layout_width="280dp"
-            android:layout_height="60dp"
-            android:src="@drawable/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DOUBLE TWO"
+            android:textColor="@color/darkBlue"
+            android:textSize="40dp"
+            android:textStyle="bold"
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/appIcon"
             />
@@ -109,14 +109,14 @@
             android:hint="********"
             android:inputType="textPassword"
             android:id="@+id/pwEditText"
-            android:drawableLeft="@drawable/login_key_icon"
+            android:drawableLeft="@drawable/custom_login_key_icon"
             android:background="@android:color/white"
             android:layout_below="@id/line1"
             android:layout_centerHorizontal="true"
             android:layout_width="280dp"
             android:drawablePadding="5dp"
             android:layout_height="50dp" />
-        
+
         <Button
             android:layout_marginTop="25dp"
             android:layout_below="@id/pwEditText"
@@ -127,7 +127,7 @@
             android:textSize="25dp"
             android:textStyle="bold"
             android:text="L O G I N"
-            android:id="@+id/loginButton"/>
+            android:id="@+id/loginBtn"/>
 
         <TextView
             android:textSize="12dp"
@@ -135,8 +135,8 @@
             android:layout_height="wrap_content"
             android:text="비밀번호를 잊어버리셨나요?"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/loginButton"
+            android:layout_below="@id/loginBtn"
             android:textColor="@color/darkFont"
-            android:id="@+id/forgetPwButton"/>
+            android:id="@+id/forgetPwBtn"/>
     </RelativeLayout>
 </LinearLayout>

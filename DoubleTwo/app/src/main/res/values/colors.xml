@@ -6,4 +6,6 @@
     <color name="background">#F7F7F7</color>
     <color name="darkFont">#343535</color>
     <color name="lightFont">#676969</color>
+    <color name="splashBackground">#0177BD</color>
+    <color name="darkBlue">#03579D</color>
 </resources>
