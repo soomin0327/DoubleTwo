@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:background="@drawable/signup_gradation" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:background="@android:color/white" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="50dp"
+        android:id="@+id/appImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/white_circle" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/logo_blue" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appImage"
+        android:layout_centerHorizontal="true"
+        android:text="S  I  G  N     U  P"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_above="@+id/signupNextBtn2"
+        android:orientation="vertical"
+        android:layout_margin="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:hint="name"
+            android:textColorHint="@color/fontLight"
+            android:textColor="@color/fontLight"
+            android:drawableRight="@drawable/custom_ic_name_person"
+            android:backgroundTint="@color/fontLight"
+            android:id="@+id/signupNameEditText"
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <android.support.design.widget.TextInputEditText
+            android:hint="birthday"
+            android:textColorHint="@color/fontLight"
+            android:textColor="@color/fontLight"
+            android:drawableRight="@drawable/custom_ic_age_cal"
+            android:backgroundTint="@color/fontLight"
+            android:textSize="15dp"
+            android:id="@+id/signupPhoneNumEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <android.support.design.widget.TextInputEditText
+            android:hint="phoneNum"
+            android:textColorHint="@color/fontLight"
+            android:textColor="@color/fontLight"
+            android:drawableRight="@drawable/custom_ic_phone"
+            android:backgroundTint="@color/fontLight"
+            android:id="@+id/signupBirthEditText"
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <android.support.design.widget.TextInputEditText
+            android:hint="gender"
+            android:textSize="15dp"
+            android:textColorHint="@color/fontLight"
+            android:textColor="@color/fontLight"
+            android:drawableRight="@drawable/custom_ic_sex"
+            android:backgroundTint="@color/fontLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:layout_marginBottom="40dp"
+        android:id="@+id/signupNextBtn2"
+        android:layout_alignParentBottom="true"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/circle_button"
+        android:elevation="50dp"
+        android:text="N E X T"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>
