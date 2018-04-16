@@ -30,9 +30,9 @@
         android:layout_below="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="여행을 혼자 하기 두렵다면
-가이드와 함께새로운 곳을 가보고 싶다면
-가이드와 여행자를 이어주는
+        android:text="여행을 혼자 하기 두렵다면\n
+가이드와 함께새로운 곳을 가보고 싶다면\n
+가이드와 여행자를 이어주는\n
 더블투를 시작해 보시는건 어떤가요?" />
 
 
@@ -43,6 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
+            android:id="@+id/signupBtn"
             android:textSize="15dp"
             android:layout_marginBottom="15dp"
             android:textColor="@color/fontLight"
@@ -52,6 +53,7 @@
             android:background="@android:color/white"/>
 
         <Button
+            android:id="@+id/loginBtn"
             android:textSize="15dp"
             android:layout_marginBottom="20dp"
             android:text="L O G I N"
