@@ -1,4 +1,4 @@
-package com.example.dsm2016.doubletwo;
+package com.example.dsm2016.doubletwo.Activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
