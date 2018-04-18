@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/splashBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageTmp"
+        android:layout_marginTop="140dp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/logo_white"/>
+    <TextView
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageTmp"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D o u b l e   T w o"/>
+</RelativeLayout>

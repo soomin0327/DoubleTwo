@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/im_start_background">
+
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:text="DOUBLE TWO"
+        android:textColor="@android:color/white"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@id/text1"
+        android:layout_toRightOf="@+id/text1"
+        android:src="@drawable/logo_white" />
+
+    <TextView
+        android:textSize="20dp"
+        android:lineSpacingExtra="10dp"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="여행을 혼자 하기 두렵다면\n
+가이드와 함께새로운 곳을 가보고 싶다면\n
+가이드와 여행자를 이어주는\n
+더블투를 시작해 보시는건 어떤가요?" />
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/signupBtn"
+            android:textSize="15dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/fontLight"
+            android:text="S I G N   U P"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@android:color/white"/>
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:textSize="15dp"
+            android:layout_marginBottom="20dp"
+            android:text="L O G I N"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#0177BD"/>
+    </LinearLayout>
+</RelativeLayout>
