@@ -43,6 +43,7 @@
     </RelativeLayout>
 
     <TextView
+        android:textColor="@android:color/white"
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -53,9 +54,10 @@
         android:textStyle="bold" />
 
     <LinearLayout
+
         android:layout_above="@+id/signupNextBtn2"
         android:orientation="vertical"
-        android:layout_margin="60dp"
+        android:layout_margin="40dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 

@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 
 import com.example.dsm2016.doubletwo.Adapter.SignupViewPagerAdapter;
 import com.example.dsm2016.doubletwo.Fragment.SignupFragment1;
@@ -15,16 +16,37 @@ import java.util.List;
 
 public class SignupActivity extends AppCompatActivity {
 
+    private TabLayout tabLayout;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
-        ViewPager viewPager = (ViewPager) findViewById(R.id.signupPager);
-        SignupViewPagerAdapter adapter = new SignupViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new SignupFragment1());
+        tabLayout = (TabLayout) findViewById(R.id.signupTabLayout);
+        tabLayout.addTab(tabLayout.newTab().setText("first"));
+//        tabLayout.addTab(tabLayout.newTab().setText("two"));
 
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.signupTabLayout);
-        tabLayout.setupWithViewPager(viewPager);
+        final ViewPager viewPager = (ViewPager) findViewById(R.id.signupPager);
+        SignupViewPagerAdapter pagerAdapter = new SignupViewPagerAdapter(getSupportFragmentManager());
+        viewPager.setAdapter(pagerAdapter);
+        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                viewPager.setCurrentItem(tab.getPosition());
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
     }
 }

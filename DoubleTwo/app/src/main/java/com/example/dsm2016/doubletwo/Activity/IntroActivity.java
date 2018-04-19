@@ -1,16 +1,18 @@
 package com.example.dsm2016.doubletwo.Activity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.dsm2016.doubletwo.R;
 
-public class IntroActivity extends AppCompatActivity implements View.OnClickListener{
+public class IntroActivity extends AppCompatActivity{
     Button signupBtn, loginBtn;
 
     @Override
@@ -19,22 +21,24 @@ public class IntroActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_intro);
 
         signupBtn = (Button) findViewById(R.id.signupBtn);
-        loginBtn = (Button) findViewById(R.id.loginBtn);
-        signupBtn.setOnClickListener(this);
-        loginBtn.setOnClickListener(this);
-    }
-
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.signupBtn :
-                Toast.makeText(getApplicationContext(), "Signupbtn onClick", Toast.LENGTH_SHORT);
+        signupBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("-------- signupBtn", "cp");
                 Intent toSignup = new Intent(IntroActivity.this, SignupActivity.class);
                 startActivity(toSignup);
-            case R.id.loginBtn :
-                Toast.makeText(getApplicationContext(), "Loginbtn onClick", Toast.LENGTH_SHORT);
+                finish();
+            }
+        });
+        loginBtn = (Button) findViewById(R.id.loginBtn);
+        loginBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("-------- loginBtn", "cp");
                 Intent toLogin = new Intent(IntroActivity.this, LoginActivity.class);
                 startActivity(toLogin);
-        }
+                finish();
+            }
+        });
     }
 }

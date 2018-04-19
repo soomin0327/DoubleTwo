@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
     android:background="@null"
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -41,6 +41,8 @@
     </RelativeLayout>
 
     <TextView
+        android:id="@+id/text5"
+        android:textColor="@android:color/white"
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -48,25 +50,29 @@
         android:layout_centerHorizontal="true"
         android:text="S  I  G  N     U  P"
         android:textSize="20dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:ignore="DuplicateIds" />
 
     <RelativeLayout
-        android:layout_alignParentBottom="true"
         android:background="@null"
-        android:layout_marginBottom="50dp"
         android:layout_width="match_parent"
-        android:layout_height="280dp">
+        android:layout_height="match_parent"
+        android:layout_below="@+id/text5">
+
 
         <android.support.v7.widget.CardView
             android:id="@+id/cardView"
+            android:background="@null"
             android:layout_width="match_parent"
-            android:layout_height="260dp"
-            android:layout_marginRight="50dp"
+            android:layout_height="match_parent"
             android:layout_marginLeft="50dp"
+            android:layout_marginBottom="100dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
             android:elevation="100dp">
 
             <RelativeLayout
-                android:padding="20dp"
+                android:padding="30dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@android:color/white">
@@ -88,14 +94,14 @@
                     android:text="ID는 휴태폰 번호입니다."
                     android:textColor="@color/fontLight"/>
 
-                <android.support.design.widget.TextInputEditText
+                <EditText
                     android:layout_marginTop="40dp"
                     android:layout_below="@+id/text2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="******"
+                    android:hint="비밀번호를 입력해주세요"
                     android:drawableRight="@drawable/custom_ic_lock"
-                    android:textSize="15dp"
+                    android:textSize="10dp"
                     android:textColorHint="@color/fontLight"
                     android:textColor="@color/fontLight"
                     android:id="@+id/signupSetPw1"/>
@@ -104,9 +110,9 @@
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="******"
+                    android:hint="비밀번호를 재 입력해주세요"
                     android:drawableRight="@drawable/custom_ic_lock"
-                    android:textSize="15dp"
+                    android:textSize="10dp"
                     android:layout_below="@+id/signupSetPw1"
                     android:textColorHint="@color/fontLight"
                     android:textColor="@color/fontLight"
@@ -117,16 +123,17 @@
         </android.support.v7.widget.CardView>
 
         <Button
-            android:id="@+id/signupNextBtn3"
             android:layout_alignParentBottom="true"
+            android:layout_marginBottom="70dp"
+            android:id="@+id/signupNextBtn"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
             android:background="@drawable/circle_button"
             android:elevation="50dp"
             android:text="N E X T"
             android:textSize="20dp" />
     </RelativeLayout>
-
 
 </RelativeLayout>
