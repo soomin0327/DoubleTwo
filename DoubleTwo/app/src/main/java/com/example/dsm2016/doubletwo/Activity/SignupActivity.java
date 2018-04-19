@@ -24,8 +24,10 @@ public class SignupActivity extends AppCompatActivity {
         setContentView(R.layout.activity_signup);
 
         tabLayout = (TabLayout) findViewById(R.id.signupTabLayout);
-        tabLayout.addTab(tabLayout.newTab().setText("first"));
-//        tabLayout.addTab(tabLayout.newTab().setText("two"));
+        tabLayout.addTab(tabLayout.newTab());
+        tabLayout.addTab(tabLayout.newTab());
+        tabLayout.addTab(tabLayout.newTab());
+        tabLayout.addTab(tabLayout.newTab());
 
         final ViewPager viewPager = (ViewPager) findViewById(R.id.signupPager);
         SignupViewPagerAdapter pagerAdapter = new SignupViewPagerAdapter(getSupportFragmentManager());

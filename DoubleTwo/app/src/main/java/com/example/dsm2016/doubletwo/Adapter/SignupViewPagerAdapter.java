@@ -8,13 +8,15 @@ import android.support.v4.view.PagerAdapter;
 
 import com.example.dsm2016.doubletwo.Fragment.SignupFragment1;
 import com.example.dsm2016.doubletwo.Fragment.SignupFragment2;
+import com.example.dsm2016.doubletwo.Fragment.SignupFragment3;
+import com.example.dsm2016.doubletwo.Fragment.SignupFragment4;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class SignupViewPagerAdapter extends FragmentStatePagerAdapter {
 
-    private int TAB_COUNT = 2;
+    private int TAB_COUNT = 4;
 
     public SignupViewPagerAdapter(FragmentManager fm) {
         super(fm);
@@ -28,6 +30,13 @@ public class SignupViewPagerAdapter extends FragmentStatePagerAdapter {
                 return fragment1;
             case 1 :
                 SignupFragment2 fragment2 = new SignupFragment2();
+                return fragment2;
+            case 2:
+                SignupFragment3 fragment3 = new SignupFragment3();
+                return fragment3;
+            case 3:
+                SignupFragment4 fragment4 = new SignupFragment4();
+                return fragment4;
             default:
                 return null;
         }
