@@ -16,7 +16,7 @@ import java.util.List;
 
 public class SignupViewPagerAdapter extends FragmentStatePagerAdapter {
 
-    private int TAB_COUNT = 4;
+    final private int TAB_COUNT = 4;
 
     public SignupViewPagerAdapter(FragmentManager fm) {
         super(fm);

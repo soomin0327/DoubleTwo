@@ -17,7 +17,7 @@ import java.util.List;
 public class SignupActivity extends AppCompatActivity {
 
     private TabLayout tabLayout;
-
+    private ViewPager viewPager;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +29,7 @@ public class SignupActivity extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab());
         tabLayout.addTab(tabLayout.newTab());
 
-        final ViewPager viewPager = (ViewPager) findViewById(R.id.signupPager);
+        viewPager = (ViewPager) findViewById(R.id.signupPager);
         SignupViewPagerAdapter pagerAdapter = new SignupViewPagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(pagerAdapter);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
