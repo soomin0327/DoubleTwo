@@ -55,7 +55,7 @@
 
     <LinearLayout
 
-        android:layout_above="@+id/signupNextBtn2"
+        android:layout_above="@+id/signupNextBtn3"
         android:orientation="vertical"
         android:layout_margin="40dp"
         android:layout_width="match_parent"
