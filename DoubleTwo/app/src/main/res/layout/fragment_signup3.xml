@@ -23,11 +23,11 @@
     </LinearLayout>
 
     <RelativeLayout
-        android:layout_marginTop="50dp"
         android:id="@+id/appImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
 
         <View
             android:layout_width="80dp"
@@ -43,72 +43,76 @@
     </RelativeLayout>
 
     <TextView
-        android:textColor="@android:color/white"
-        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/appImage"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:text="S  I  G  N     U  P"
+        android:textColor="@android:color/white"
         android:textSize="20dp"
         android:textStyle="bold" />
 
     <LinearLayout
 
-        android:layout_above="@+id/signupNextBtn3"
-        android:orientation="vertical"
-        android:layout_margin="40dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signupNextBtn3"
+        android:layout_margin="40dp"
+        android:orientation="vertical">
 
         <android.support.design.widget.TextInputEditText
-            android:hint="name"
-            android:textColorHint="@color/fontLight"
-            android:textColor="@color/fontLight"
-            android:drawableRight="@drawable/custom_ic_name_person"
-            android:backgroundTint="@color/fontLight"
             android:id="@+id/signupNameEditText"
-            android:textSize="15dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-        <android.support.design.widget.TextInputEditText
-            android:hint="birthday"
-            android:textColorHint="@color/fontLight"
-            android:textColor="@color/fontLight"
-            android:drawableRight="@drawable/custom_ic_age_cal"
+            android:layout_height="wrap_content"
             android:backgroundTint="@color/fontLight"
-            android:textSize="15dp"
+            android:drawableRight="@drawable/custom_ic_name_person"
+            android:hint="name"
+            android:textColor="@color/fontLight"
+            android:textColorHint="@color/fontLight"
+            android:textSize="15dp" />
+
+        <android.support.design.widget.TextInputEditText
             android:id="@+id/signupPhoneNumEditText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-        <android.support.design.widget.TextInputEditText
-            android:hint="phoneNum"
-            android:textColorHint="@color/fontLight"
-            android:textColor="@color/fontLight"
-            android:drawableRight="@drawable/custom_ic_phone"
+            android:layout_height="wrap_content"
             android:backgroundTint="@color/fontLight"
+            android:drawableRight="@drawable/custom_ic_age_cal"
+            android:hint="birthday"
+            android:textColor="@color/fontLight"
+            android:textColorHint="@color/fontLight"
+            android:textSize="15dp" />
+
+        <android.support.design.widget.TextInputEditText
             android:id="@+id/signupBirthEditText"
-            android:textSize="15dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-        <android.support.design.widget.TextInputEditText
-            android:hint="gender"
-            android:textSize="15dp"
-            android:textColorHint="@color/fontLight"
-            android:textColor="@color/fontLight"
-            android:drawableRight="@drawable/custom_ic_sex"
+            android:layout_height="wrap_content"
             android:backgroundTint="@color/fontLight"
+            android:drawableRight="@drawable/custom_ic_phone"
+            android:hint="phoneNum"
+            android:textColor="@color/fontLight"
+            android:textColorHint="@color/fontLight"
+            android:textSize="15dp" />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/signupGenderEditText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/fontLight"
+            android:drawableRight="@drawable/custom_ic_sex"
+            android:hint="gender"
+            android:textColor="@color/fontLight"
+            android:textColorHint="@color/fontLight"
+            android:textSize="15dp" />
     </LinearLayout>
 
     <Button
-        android:layout_marginBottom="40dp"
         android:id="@+id/signupNextBtn3"
-        android:layout_alignParentBottom="true"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/circle_button"
         android:elevation="50dp"
         android:text="N E X T"

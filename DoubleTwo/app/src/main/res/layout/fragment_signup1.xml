@@ -99,16 +99,15 @@
                     android:paddingBottom="20dp"/>
 
                 <LinearLayout
-                    android:layout_marginBottom="7dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <android.support.v7.widget.AppCompatCheckBox
                         android:layout_marginLeft="18dp"
                         android:layout_gravity="center_vertical"
-                        android:button="@color/fontDark"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
+                        android:buttonTint="@color/fontDark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:id="@+id/signupRule1"/>
 
                     <TextView
@@ -128,16 +127,15 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_marginBottom="7dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <android.support.v7.widget.AppCompatCheckBox
                         android:layout_marginLeft="18dp"
                         android:layout_gravity="center_vertical"
-                        android:button="@color/fontDark"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
+                        android:buttonTint="@color/fontDark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:id="@+id/signupRule2"/>
 
                     <TextView
@@ -157,16 +155,15 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_marginBottom="7dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <android.support.v7.widget.AppCompatCheckBox
                         android:layout_marginLeft="18dp"
                         android:layout_gravity="center_vertical"
-                        android:button="@color/fontDark"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
+                        android:buttonTint="@color/fontDark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:id="@+id/signupRule3"/>
 
                     <TextView
@@ -186,16 +183,15 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_marginBottom="7dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <android.support.v7.widget.AppCompatCheckBox
                         android:layout_marginLeft="18dp"
                         android:layout_gravity="center_vertical"
-                        android:button="@color/fontDark"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
+                        android:buttonTint="@color/fontDark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:id="@+id/signupRule4"/>
 
                     <TextView

@@ -21,6 +21,7 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 Intent toIntro = new Intent(SplashActivity.this, IntroActivity.class);
                 startActivity(toIntro);
+                finish();
             }
         }, DELAY_SECOND);
     }
