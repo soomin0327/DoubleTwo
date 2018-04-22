@@ -75,4 +75,8 @@ public class PicUploadActivity extends AppCompatActivity {
 
 
     }
+
+    public void setCurrentItem(int position, boolean smoothScroll) {
+        pager.setCurrentItem(position, smoothScroll);
+    }
 }
