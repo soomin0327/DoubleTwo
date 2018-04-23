@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.dsm2016.doubletwo.R;
 
@@ -27,7 +28,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        loginBtn = (Button) findViewById(R.id.loginBtn);
+        loginBtn = (Button) findViewById(R.id.loginPageLoginButton);
         idEditText = (EditText) findViewById(R.id.idEditText);
         pwEditText = (EditText) findViewById(R.id.pwEditText);
         forgetPwText = (TextView) findViewById(R.id.forgetPwButton);
@@ -40,6 +41,14 @@ public class LoginActivity extends AppCompatActivity {
 
                 if(sId != null && sPw != null) {
                     //로그인 성공 페이지로 옮기기
+                    startActivity(new Intent(LoginActivity.this, Choice4UserKindActivity.class));
+                    finish();
+                } else if(sId == null){
+                    Toast.makeText(getApplicationContext(), "아이디를 입력하세요.", Toast.LENGTH_SHORT);
+                } else  if (sPw == null) {
+                    Toast.makeText(getApplicationContext(), "비밀번호를 입력하세요.", Toast.LENGTH_SHORT);
+                } else {
+                    Toast.makeText(getApplicationContext(), "아이디와 비밀번호를 입력하세요.", Toast.LENGTH_SHORT);
                 }
             }
         });
@@ -47,7 +56,8 @@ public class LoginActivity extends AppCompatActivity {
         forgetPwText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(new Intent(LoginActivity.this, PwFindingActivity.class));
+                finish();
             }
         });
     }
