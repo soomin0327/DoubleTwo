@@ -3,9 +3,7 @@ package com.example.dsm2016.doubletwo.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,8 +11,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.dsm2016.doubletwo.R;
-
-import org.w3c.dom.Text;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -41,7 +37,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 if(sId != null && sPw != null) {
                     //로그인 성공 페이지로 옮기기
-                    startActivity(new Intent(LoginActivity.this, Choice4UserKindActivity.class));
+                    startActivity(new Intent(LoginActivity.this, MainActivity.class));
                     finish();
                 } else if(sId == null){
                     Toast.makeText(getApplicationContext(), "아이디를 입력하세요.", Toast.LENGTH_SHORT);

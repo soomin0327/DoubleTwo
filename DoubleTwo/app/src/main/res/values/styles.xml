@@ -19,4 +19,9 @@
         <item name="android:textSize">8dp</item>
     </style>
 
+    <style name="SearchViewCustom" parent="Widget.AppCompat.SearchView">
+        <item name = "searchIcon"> @drawable/ic_search</item>
+        <item name="queryBackground">@android:color/white</item>
+    </style>
+
 </resources>
