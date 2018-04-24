@@ -1,12 +1,10 @@
 package com.example.dsm2016.doubletwo.Adapter;
 
-import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 
-import com.example.dsm2016.doubletwo.Activity.MainActivity;
 import com.example.dsm2016.doubletwo.Activity.TMainActivity;
 import com.example.dsm2016.doubletwo.CustomView.TMainCarouselLinearLayout;
 import com.example.dsm2016.doubletwo.Fragment.TMainFragment;

@@ -41,15 +41,11 @@ public class TMainFragment extends Fragment{
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        if (container == null) {
-            return null;
-        }
+        View view = inflater.inflate(R.layout.fragment_traveler_viewpager, container, false);
 
         final int postion = this.getArguments().getInt(POSITON);
         float scale = this.getArguments().getFloat(SCALE);
-
-        View view = inflater.inflate(R.layout.fragment_traveler_viewpager, container, false);
-
+        
         TMainCarouselLinearLayout root = (TMainCarouselLinearLayout) view.findViewById(R.id.root_container);
         ImageView imageView = (ImageView) view.findViewById(R.id.pagerImg);
 
