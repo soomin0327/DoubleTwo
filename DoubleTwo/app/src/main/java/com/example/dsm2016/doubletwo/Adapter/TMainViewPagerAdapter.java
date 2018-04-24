@@ -14,6 +14,7 @@ import com.example.dsm2016.doubletwo.R;
 
 public class TMainViewPagerAdapter extends FragmentPagerAdapter implements ViewPager.OnPageChangeListener {
 
+    private static final int TAB_NUMBER = 5;
     public final static float BIG_SCALE = 1.0f;
     public final static float SMALL_SCALE = 0.7f;
     public final static float DIFF_SCALE = BIG_SCALE - SMALL_SCALE;
@@ -46,14 +47,7 @@ public class TMainViewPagerAdapter extends FragmentPagerAdapter implements ViewP
 
     @Override
     public int getCount() {
-        int count = 0;
-        try {
-            count = TMainActivity.count * TMainActivity.LOOPS;
-        } catch (Exception e) {
-            // TODO: handle exception
-            e.printStackTrace();
-        }
-        return count;
+        return TAB_NUMBER;
     }
 
     @Override
@@ -62,6 +56,9 @@ public class TMainViewPagerAdapter extends FragmentPagerAdapter implements ViewP
             if (positionOffset >= 0f && positionOffset <= 1f) {
                 TMainCarouselLinearLayout cur = getRootView(position);
                 TMainCarouselLinearLayout next = getRootView(position + 1);
+
+                cur.setScaleBoth(BIG_SCALE - DIFF_SCALE * positionOffset);
+                next.setScaleBoth(SMALL_SCALE + DIFF_SCALE * positionOffset);
 
             }
         } catch (Exception e) {
