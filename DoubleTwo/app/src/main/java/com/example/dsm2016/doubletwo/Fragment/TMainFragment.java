@@ -24,6 +24,13 @@ public class TMainFragment extends Fragment{
 
     private int[] imageArray = new int[]{R.drawable.image1, R.drawable.image2,
             R.drawable.image3, R.drawable.image4, R.drawable.image5};
+    private String[] titleArray;
+    private String[] introArray;
+    private int[] minPersonArray;
+    private int[] maxPersonArray;
+    private String[] locationArray;
+    private String[] dayArray;
+    private int[] heartArray;
 
     public static Fragment newInstance(Context context, int pos, float scale) {
         Bundle b = new Bundle();
@@ -45,7 +52,7 @@ public class TMainFragment extends Fragment{
 
         final int postion = this.getArguments().getInt(POSITON);
         float scale = this.getArguments().getFloat(SCALE);
-        
+
         TMainCarouselLinearLayout root = (TMainCarouselLinearLayout) view.findViewById(R.id.root_container);
         ImageView imageView = (ImageView) view.findViewById(R.id.pagerImg);
 

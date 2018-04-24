@@ -94,31 +94,31 @@
                 android:background="@drawable/custom_round_searchview" />
 
             <LinearLayout
-                android:padding="1px"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/rectangle_border"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="1px">
 
                 <TextView
-                    android:layout_marginTop="15dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="35dp"
+                    android:layout_marginTop="15dp"
                     android:text="추천 가이드"
                     android:textColor="@color/fontDark"
                     android:textSize="18dp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:textSize="15dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
                     android:layout_marginLeft="35dp"
                     android:text="DOUBLETWO가 추천드리는 금주의 추천 가이드"
                     android:textColor="@color/fontLight"
-                    android:layout_marginBottom="10dp"/>
-                
+                    android:textSize="15dp" />
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="140dp">
@@ -126,24 +126,71 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="90dp"
-                        android:background="@color/asGuide"
-                        android:layout_centerInParent="true"/>
+                        android:layout_centerInParent="true"
+                        android:background="@color/asGuide" />
 
                     <android.support.v4.view.ViewPager
                         android:id="@+id/tMainViewPager"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"/>
+                        android:layout_height="match_parent" />
                 </RelativeLayout>
 
                 <android.support.design.widget.TabLayout
-                    android:padding="10dp"
                     android:id="@+id/tMainTabLayout"
-                    android:background="@android:color/white"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    app:tabGravity="center"
+                    android:layout_height="40dp"
+                    android:background="@android:color/white"
+                    android:padding="10dp"
                     app:tabBackground="@drawable/tab_selector"
-                    app:tabIndicatorHeight="0dp"/>
+                    app:tabGravity="center"
+                    app:tabIndicatorHeight="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectangle_border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="15dp"
+                    android:text="추천 가이드"
+                    android:textColor="@color/fontDark"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="35dp"
+                    android:text="현재 위치와 가장 가까운 곳에서
+서비스를 제공하고 있는 가이드 입니다."
+                    android:textColor="@color/fontLight"
+                    android:textSize="15dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:id="@+id/tMainRecyclerView"/>
+
+                    <View
+                        android:layout_marginBottom="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:background="@color/asGuide" />
+
+                </RelativeLayout>
             </LinearLayout>
         </LinearLayout>
 

@@ -18,7 +18,7 @@ public class TMainActivity extends AppCompatActivity {
     private TabLayout tabLayout;
     public ViewPager pager;
     public static int count = 5;
-    public static int FIRST_PAGE = 1;
+    public static int FIRST_PAGE = 5;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

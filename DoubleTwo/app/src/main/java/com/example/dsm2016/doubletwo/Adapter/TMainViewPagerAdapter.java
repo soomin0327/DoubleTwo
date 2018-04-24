@@ -30,7 +30,7 @@ public class TMainViewPagerAdapter extends FragmentPagerAdapter implements ViewP
     public Fragment getItem(int position) {
         // make the first pager bigger than others
         try {
-            if (position == context.FIRST_PAGE)
+            if (position == 2)
                 scale = BIG_SCALE;
             else
                 scale = SMALL_SCALE;
