@@ -32,8 +32,6 @@ public class CustomViewPager extends ViewPager {
         return false;
     }
 
-    //down one is added for smooth scrolling
-
     private void setMyScroller() {
         try {
             Class<?> viewpager = ViewPager.class;

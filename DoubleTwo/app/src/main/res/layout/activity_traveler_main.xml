@@ -94,6 +94,7 @@
                 android:background="@drawable/custom_round_searchview" />
 
             <LinearLayout
+                android:padding="1px"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/rectangle_border"
@@ -127,11 +128,13 @@
                         android:background="@color/asGuide"
                         android:layout_centerInParent="true"/>
                     <android.support.v4.view.ViewPager
+                        android:id="@+id/tMainViewPager"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"/>
                 </RelativeLayout>
 
                 <android.support.design.widget.TabLayout
+                    android:layout_margin="1px"
                     android:padding="10dp"
                     android:id="@+id/tMainTabLayout"
                     android:background="@android:color/white"

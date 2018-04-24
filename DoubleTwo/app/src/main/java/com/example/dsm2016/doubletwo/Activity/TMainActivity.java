@@ -1,0 +1,42 @@
+package com.example.dsm2016.doubletwo.Activity;
+
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
+import android.util.DisplayMetrics;
+import android.view.View;
+
+import com.example.dsm2016.doubletwo.Adapter.TMainViewPagerAdapter;
+import com.example.dsm2016.doubletwo.R;
+
+public class TMainActivity extends AppCompatActivity {
+
+    public final static int LOOPS = 1000;
+    private TMainViewPagerAdapter adapter;
+    public ViewPager pager;
+    public static int count = 10;
+    public static int FIRST_PAGE = 10;
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_traveler_main);
+
+        pager = (ViewPager) findViewById(R.id.tMainViewPager);
+
+        DisplayMetrics metrics = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(metrics);
+        int pageMargin = ((metrics.widthPixels / 4) * 2);
+        pager.setPageMargin(-pageMargin);
+
+        adapter = new TMainViewPagerAdapter(this, getSupportFragmentManager());
+        pager.setAdapter(adapter);
+        adapter.notifyDataSetChanged();
+
+        pager.addOnPageChangeListener(adapter);
+
+        pager.setCurrentItem(FIRST_PAGE);
+        pager.setOffscreenPageLimit(3);
+
+    }
+}
