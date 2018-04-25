@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/tMainNearServicePic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/im_1_service"/>
+    <LinearLayout
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_heart_empty"/>
+        <TextView
+            android:id="@+id/tMainNearServiceLikes"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:text="56"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:text=" + likes"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tMainNearServiceTitle"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="도심속에서 느끼는 한옥"/>
+
+    <TextView
+        android:id="@+id/tMainNearServiceIntro"
+        android:layout_below="@+id/tMainNearServiceTitle"
+        style="@style/tMainNearServiceText1"
+        android:layout_margin="20dp"
+        android:text="도심속에서 체험하는 우리나라의 한복과 한옥으로 당신을 초대합니다."/>
+
+    <LinearLayout
+        android:id="@+id/tmp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tMainNearServiceIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tMainServiceGuideName"
+            style="@style/tMainNearServiceText1"
+            android:text="이가연"/>
+        <TextView
+            style="@style/tMainNearServiceText1"
+            android:text="가이드님"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ic_people_white"
+            android:scaleType="fitXY"/>
+        <TextView
+            style="@style/tMainNearServiceText2"
+            android:text="인원"/>
+        <TextView
+            android:id="@+id/tMainNearServicePeopleNum"
+            style="@style/tMainNearServiceText2"
+            android:text="2"/>
+        <TextView
+            style="@style/tMainNearServiceText2"
+            android:text="명   "/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ic_cal_white"/>
+
+        <TextView
+            android:id="@+id/tMainNEarServiceStartDate"
+            style="@style/tMainNearServiceText2"
+            android:text="2017.03.25"/>
+        <TextView
+            style="@style/tMainNearServiceText2"
+            android:textSize="13dp"
+            android:text=" ~ "/>
+        <TextView
+            android:id="@+id/tMainNEarServiceEndDate"
+            style="@style/tMainNearServiceText2"
+            android:text="04.03   "/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ic_location_white"/>
+
+        <TextView
+            android:id="@+id/tMainNEarServiceLocation"
+            style="@style/tMainNearServiceText2"
+            android:text="서울시"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
