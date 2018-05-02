@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Double Two</string>
+    <string name="start_explain">"여행을 혼자 하기 두렵다면
+가이드와 함께 새로운 곳을 가보고싶다면
+가이드와 여행자를 이어주는
+더블투를 시작해보시는건 어떤가요?"</string>
+    <string name="signup5_explain">"서비스 제공을 위한 본인인증입니다
+보다 더 안전하고 믿을 수 있는
+서비스 제공을 위한 절차 입니다"
+    </string>
+</resources>
